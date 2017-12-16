@@ -6,3 +6,6 @@
 export {default as Main} from './main'
 export {default as UserHome} from './user-home'
 export {Login, Signup} from './auth-form'
+export {default as Fight} from './Fight'
+export {default as LongRest} from './LongRest'
+export {default as Resources} from './Resources'
