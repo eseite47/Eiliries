@@ -13,6 +13,7 @@ import MapsPersonPin from 'material-ui/svg-icons/maps/person-pin';
  *  else common to our entire app. The 'picture' inside the frame is the space
  *  rendered out by the component's `children`.
  */
+
 const TabsExampleIconText = () => (
   <Tabs>
     <Tab
@@ -34,11 +35,6 @@ const TabsExampleIconText = () => (
   </Tabs>
 );
   
-{/* <Link to="/home"></Link>
-        <Link to="/fight"></Link>
-        <Link to="/longRest"></Link>
-        <Link to="/resources">Resources</Link> */}
-
 /**
  * CONTAINER
  */

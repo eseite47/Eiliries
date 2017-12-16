@@ -17,12 +17,6 @@ const Main = (props) => {
   return (
     <div>
       <h1>Eiliries</h1>
-      {/* <Navbar /> */}
-      {/* <nav>
-        <Navbar />
-        
-      </nav> */}
-      
       {children}
     </div>
   )
