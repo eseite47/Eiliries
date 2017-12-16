@@ -9,3 +9,4 @@ export {Login, Signup} from './auth-form'
 export {default as Fight} from './Fight'
 export {default as LongRest} from './LongRest'
 export {default as Resources} from './Resources'
+export {default as Navbar} from './Navbar';

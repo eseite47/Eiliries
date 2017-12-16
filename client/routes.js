@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {Route, Switch, Router} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import history from './history'
-import {Main, Login, Signup, UserHome, Fight, LongRest, Resources} from './components'
+import {Main, Login, Signup, UserHome, Fight, LongRest, Resources, Navbar} from './components'
 import {me} from './store'
 
 /**
@@ -20,6 +20,7 @@ class Routes extends Component {
     return (
       <Router history={history}>
         <Main>
+          <Navbar />
           <Switch>
             <Route path="/home" component={UserHome} />
             <Route path="/fight" component={Fight} />

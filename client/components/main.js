@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {withRouter, Link} from 'react-router-dom'
 import {logout} from '../store'
+import {Navbar} from './Navbar'
 
 /**
  * COMPONENT
@@ -16,13 +17,12 @@ const Main = (props) => {
   return (
     <div>
       <h1>Eiliries</h1>
-      <nav>
-        <Link to="/home">Home</Link>
-        <Link to="/fight">Fight</Link>
-        <Link to="/longRest">Long Rest</Link>
-        <Link to="/resources">Resources</Link>
-      </nav>
-      <hr />
+      {/* <Navbar /> */}
+      {/* <nav>
+        <Navbar />
+        
+      </nav> */}
+      
       {children}
     </div>
   )
