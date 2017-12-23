@@ -6,7 +6,6 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import FontIcon from 'material-ui/FontIcon';
 import MapsPersonPin from 'material-ui/svg-icons/maps/person-pin';
 
-
 /**
  * COMPONENT
  *  The Main component is our 'picture frame' - it displays the navbar and anything
@@ -14,23 +13,27 @@ import MapsPersonPin from 'material-ui/svg-icons/maps/person-pin';
  *  rendered out by the component's `children`.
  */
 
-const TabsExampleIconText = () => (
+const NavStyle = {
+  fontFamily:'Reenie Beanie', 
+  fontSize: 30
+};
+
+const Navigation = () => (
   <Tabs>
     <Tab
-    icon={<FontIcon className="material-icons">home</FontIcon>}
-    label="RECENTS" containerElement={<Link to="/home"/>}
+    label={<span style={NavStyle}>home</span>} containerElement={<Link to="/home"/>}
       />
     <Tab
-      icon={<FontIcon className="material-icons">Fight</FontIcon>}
-      label="Fight" containerElement={<Link to="/fight"/>}
+      label={<span style={NavStyle}>Fight</span>}
+      containerElement={<Link to="/fight"/>}
     />
     <Tab
-      icon={<FontIcon className="material-icons">Long Rest</FontIcon>}
-      label="Long Rest" containerElement={<Link to="/longRest"/>}
+      label={<span style={NavStyle}>Long Rest</span>}
+      containerElement={<Link to="/longRest"/>}
     />
     <Tab
-      icon={<MapsPersonPin />}
-      label="Resources"
+      label={<span style={NavStyle}>Resources</span>}
+      containerElement={<Link to="/resources"/>}
     />
   </Tabs>
 );
@@ -54,12 +57,12 @@ const mapDispatch = (dispatch) => {
 
 // The `withRouter` wrapper makes sure that updates are not blocked
 // when the url changes
-export default withRouter(connect(mapState, mapDispatch)(TabsExampleIconText))
+export default withRouter(connect(mapState, mapDispatch)(Navigation))
 
 /**
  * PROP TYPES
  */
-TabsExampleIconText.propTypes = {
+Navigation.propTypes = {
   children: PropTypes.object,
   handleClick: PropTypes.func.isRequired,
   isLoggedIn: PropTypes.bool.isRequired

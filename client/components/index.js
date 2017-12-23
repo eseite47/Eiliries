@@ -10,3 +10,4 @@ export {default as Fight} from './Fight'
 export {default as LongRest} from './LongRest'
 export {default as Resources} from './Resources'
 export {default as Navbar} from './Navbar';
+export {default as MyStats} from './MyStats'

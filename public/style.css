@@ -6,6 +6,16 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  text-align: center;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 30px
+}
+
+p {
+  font-family: 'Reenie Beanie', cursive;
+}
+
 label {
   display: block;
 }

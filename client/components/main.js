@@ -4,6 +4,8 @@ import {connect} from 'react-redux'
 import {withRouter, Link} from 'react-router-dom'
 import {logout} from '../store'
 import {Navbar} from './Navbar'
+import { MyStats } from './MyStats'
+import {myStats} from './index'
 
 /**
  * COMPONENT
@@ -17,6 +19,7 @@ const Main = (props) => {
   return (
     <div>
       <h1>Eiliries</h1>
+      <MyStats />
       {children}
     </div>
   )
