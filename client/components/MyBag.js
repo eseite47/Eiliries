@@ -5,12 +5,12 @@ import {connect} from 'react-redux'
 /**
  * COMPONENT
  */
-export const Fight = (props) => {
+export const MyBag = (props) => {
   const {email} = props
 
   return (
     <div>
-      <h3>Fight!</h3>
+      <h3>My Bag</h3>
     </div>
   )
 }
@@ -24,11 +24,11 @@ const mapState = (state) => {
   }
 }
 
-export default connect(mapState)(Fight)
+export default connect(mapState)(MyBag)
 
 /**
  * PROP TYPES
  */
-Fight.propTypes = {
+MyBag.propTypes = {
   email: PropTypes.string
 }

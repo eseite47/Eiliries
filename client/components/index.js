@@ -11,3 +11,5 @@ export {default as LongRest} from './LongRest'
 export {default as Resources} from './Resources'
 export {default as Navbar} from './Navbar';
 export {default as MyStats} from './MyStats'
+export {default as MyMagic} from './MyMagic'
+export {default as MyBag} from './MyBag'
